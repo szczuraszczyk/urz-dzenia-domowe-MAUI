@@ -16,7 +16,7 @@
                 FontSize="Large"
                 HorizontalTextAlignment="Center"/>
 
-            <Label
+                <Label
                 Text="Autor: 61616161"
                 Margin="5"
                 HorizontalTextAlignment="Center"/>
@@ -31,53 +31,53 @@
 
                 <VerticalStackLayout>
                     <Label
-                Text="Pralka"
-                FontSize="Large"/>
+                    Text="Pralka"
+                    FontSize="Large"/>
 
-            <Entry
-                x:Name="podanyNrPrania"
-                Placeholder="Podaj nr prania 1... 12"
-                BackgroundColor="#87CEEB"
-                TextColor="#000080"
-                PlaceholderColor="#000080"/>
+                    <Entry
+                    x:Name="podanyNrPrania"
+                    Placeholder="Podaj nr prania 1... 12"
+                    BackgroundColor="#87CEEB"
+                    TextColor="#000080"
+                    PlaceholderColor="#000080"/>
 
-            <Button
-                x:Name="btnPralka"
-                Text="Zatwierdź"
-                Clicked="OnClickPralka"
-                BackgroundColor="#4169E1"
-                Margin="10"/>
+                    <Button
+                    x:Name="btnPralka"
+                    Text="Zatwierdź"
+                    Clicked="OnClickPralka"
+                    BackgroundColor="#4169E1"
+                    Margin="10"/>
 
                     <Label
-                x:Name="nrPrania"
-                Text="Numer prania: nie podano"/>
+                    x:Name="nrPrania"
+                    Text="Numer prania: nie podano"/>
 
                 </VerticalStackLayout>
             </HorizontalStackLayout>
 
             <HorizontalStackLayout Spacing="12" Padding="0,6">
-            <Image
+                <Image
                 Source="odkurzacz.jpg"
                 Margin="0,20,20,20"
                 HeightRequest="150"/>
                 <VerticalStackLayout Spacing="6" VerticalOptions="Center">
 
-            <Label
+                    <Label
                 Text="Odkurzacz"
                 FontSize="Large"/>
-            
-            <Button
+
+                    <Button
                 x:Name="btnOdkurzacz"
                 Text="Włącz"
                 Clicked="OnClickOdkurzacz"
                 BackgroundColor="#4169E1"
                 Margin="10"/>
 
-            <Label
+                    <Label
                 x:Name="czyWlaczony"
                 Text="Odkurzacz wyłączony"/>
 
-            <Label
+                    <Label
                 x:Name="statusOdkurzacz"
                 Text="Status: naładowany"/>
                 </VerticalStackLayout>

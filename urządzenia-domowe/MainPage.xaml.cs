@@ -2,7 +2,8 @@
 {
     public partial class MainPage : ContentPage
     {
-        int countOdkurzacz = 0;
+        //int countOdkurzacz = 0;
+        bool isTurnedOn = false;
 
         public MainPage()
         {
@@ -33,13 +34,16 @@
 
         private void OnClickOdkurzacz(object sender, EventArgs e)
         {
-            countOdkurzacz++;
+            //countOdkurzacz++;
+            isTurnedOn = !isTurnedOn;
 
-            if (countOdkurzacz % 2 == 1)
+            //if (countOdkurzacz % 2 == 1)
+            if (isTurnedOn == true)
             {
                 btnOdkurzacz.Text = "Wyłącz";
                 czyWlaczony.Text = "Odkurzacz włączony";
-            } else if (countOdkurzacz % 2 == 0)
+            //} else if (countOdkurzacz % 2 == 0)
+            } else
             {
                 btnOdkurzacz.Text = "Włącz";
                 czyWlaczony.Text = "Odkurzacz wyłączony";
